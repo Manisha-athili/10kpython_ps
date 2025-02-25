@@ -17,3 +17,31 @@
 #Inbuilt functions - Atleast the most famous once - string and list
 
 # data types
+
+
+
+# loops: loops are used to excute block of code multiple times
+# 2 main types of loops in python
+
+# for loop: iterate over a sequence
+# Syntax : for varible in sequence:
+#               code to excute
+# example: 
+for i in range(5):
+    print(i)
+    # 0 1 2  3 4
+
+# while: when we wnat to run the code as long as the condition is true
+# Syntax : while condition:
+#               code to execute
+
+# exmple: 
+count = 1
+while count <= 5:
+    print(count)
+    count+=1
+    # 1 2 3 4 5 .
+
+
+
+    
