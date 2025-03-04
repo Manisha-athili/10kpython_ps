@@ -16,7 +16,15 @@
 #Functions - Declaring a function and call a function, return statement usage
 #Inbuilt functions - Atleast the most famous once - string and list
 
-# data types
+# data types: in python:
+
+# 1. string:
+a="python"
+print(type(a))
+
+str = "languge"
+print()
+
 
 
 

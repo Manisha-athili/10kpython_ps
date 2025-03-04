@@ -13,6 +13,15 @@ for i in range(n-1):
     print(tem)
     num1 = num2
     num2 = tem
+a=0
+b=1
+num = 0
+while(num<=10):
+    tem = a + b
+    print(tem)
+    a=b
+    b =tem
+    num+=1
 
 # Check if a given number is a prime number using a  for loop. 
 flag = 0
@@ -43,7 +52,8 @@ else:
     print('not a prime')if spy == False else print("prime")
 # here w r not taking 1 and itsel num so no factor will come
 # no of iterations will less due to using of break...
-# num-1
+# num-1 
+# 
 
 print("3rd Approche")
 spy = True
