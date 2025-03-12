@@ -2,7 +2,7 @@
 # Input: 34571      Outpur : 26 missing
 
 num = 34571 
-temp = 34571 
+temp = num
 def missing_digit(temp):
     list = []
     while(temp>0):
@@ -16,3 +16,4 @@ def missing_digit(temp):
             print(i)
     return
 missing_digit(num)
+
