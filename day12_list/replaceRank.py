@@ -4,8 +4,9 @@
 #    Output:4 3   5   1  6 2
 
 list1 =[20,15,26,2,98,6]
-new_list = list1.sort()
+list1.sort()
+temp_list = list1
 # sort_list = new_list.sort()
-print(new_list)
+print(temp_list)
 
 
