@@ -35,4 +35,11 @@ for num1 in range(0,5):
         i +=1
     print()
     
+num = int(input("enter n number : "))
+for num1 in range(0,5):
+    for i in range(0,num1+1):
+        print("* ",end="")
+    print()
+    
+    
     
