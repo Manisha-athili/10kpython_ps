@@ -27,7 +27,7 @@ def write_message():
     pen.goto(-50, 200)
     pen.down()
     pen.color("black")
-    pen.write("I Love You, Manisha!", font=("Arial", 16, "bold"))
+    pen.write("but nothing is here !", font=("Arial", 16, "bold"))
 
 # Draw the heart and write the message
 pen.up()
