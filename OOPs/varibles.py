@@ -100,6 +100,72 @@ obj = Liger()
 obj.roar()
 # print(obj.roar())
 
+print("28-03-2025")
+# 28/03
+
+# Encapsulation :  is a process of hiding data for safety and pravicy perpous using setters and getters 
+# Access specifiers : private, public , protected
+# public - no restrictions - everywhere can accessed (by default)
+# private - only within the class defination only (to use : __ double underscore : before the varible name)
+#  this can be modified by using getters and setters
+# protected - access to within the class and its childern (_) single underscore : before the varible)
+# In only python we can access protected out side the class also....
+class HumanBeing:
+    def __init__(self,name,phn_number,dob):
+        self.__name=name  # private 
+        self.__phn_num = phn_number
+        self.dob = dob
+        print("human obj")
+    def get_phn_num(self):
+        return self.__phn_num
+    def set_phn_num(self,new_num):
+        self.__phn_num = new_num
+        print("Phone number has been updated")
+    def get_name(self):
+        return self.__name
+    def set_name(self,name):
+        self.__name = name
+        print("Name has been updated")
+
+hm1= HumanBeing('manisha',9065432,2345)
+print(hm1)
+print(hm1.name)
+hm1.set_name('hello')
+print(hm1.get_name)
+
+
+# Abstraction : a process of hiding implimentation details.
+# abstract classes : no logic - just the skeleton of the class
+#  any class with abstract method is called abstract class
+# Abstract Method : without any defination
+# all the methods in the Abstract should be implementes
+#we cant create obj for class
+
+from abc import ABC, abstractmethod
+
+# Abstract Class
+class ATM(ABC):
+
+    @abstractmethod
+    def withdrawl(self):
+        pass
+
+    @abstractmethod
+    def deposit(self):
+        pass
+
+    # this is the skeleton only
+
+# actual code
+class SBI_atm(ATM):
+    def withdrawl(self):
+        print("sbi withdrawl")
+    
+    def deposit(self):
+        print("deposit")
+
+# create obj to call class
+sb_atm = SBI_atm()
 
 
 
